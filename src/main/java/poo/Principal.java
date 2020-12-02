@@ -6,6 +6,14 @@ public class Principal {
         return a + b;
     }
 
+    //metodo divisao
+    public static int divisao(int a , int b){
+        if(b != 0){
+            return a /b;
+        }
+        return 0;
+    }
+
     public static void main(String[] args) {
 
         // receber operando operador e operando com argumentos de linha de comandos
@@ -20,6 +28,7 @@ public class Principal {
             case "+":
                 System.out.println("Resultado: " + soma(op1, op2));
                 break;
+
             default:
                 System.out.println("Operador inválido");
         }
